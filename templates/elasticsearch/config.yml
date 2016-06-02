@@ -1,0 +1,5 @@
+name: Bankia Elasticsearch
+description: |
+  Bankia Elasticsearch, you know for search!
+version: bk-1.7.3-rancher1
+category: bk-ELK
