@@ -1,0 +1,298 @@
+@charset "UTF-8";
+@import "../../plugin/alerts/css/alerta.css";
+@import "../../plugin/tooltip/css/tooltip.css";
+@import "../../plugin/tabs/css/jquery.tabs.css";
+@import "../../plugin/colorbox/css/colorbox.css";
+@import "../../plugin/oembed/css/oembed.css";
+@import "../../plugin/photoSwipe/photoswipe.css";
+@import "../../plugin/owlcarousel/css/owl.theme.css";
+
+*{margin:0;padding:0;border:0;list-style-type:none}
+
+body{height:100%;font-family:Arial, Verdana, Helvetica, sans-serif;color:#645a4f}
+
+input, textarea, select{border:1px solid #666;background:#fff;font:normal 1em Arial, Verdana, Helvetica, sans-serif;color:#444}
+input{background:#fbfbfb url(/public/img/css/portal/fondoInput_wu_92b6b74c2e09184c1ca690aeda794bf5.gif) no-repeat 0 0}
+.campoobligatorio input{background-color:#faf3d2;background-image:url(/public/img/css/portal/fondoInputObligatorio_wu_d5c0290ef6c45cb6510e823640785c98.gif)}
+fieldset{}
+legend{margin:0 -7px}
+
+a{text-decoration:underline;outline:none;color:#017A99}
+a:hover{text-decoration:none !important;color:#35261A !important}
+
+/* iconos en los enlaces a documentos y externos (el editor les pone un class .documento y .externo) */
+a.documento, a.externo{margin-left:5px;padding:3px 0 3px 20px;background:transparent url(/public/img/docTipo/archivo_wu_c96e96708646c357d6da1686fc5709c2.gif) no-repeat 0 2px}
+a.documento:hover{background-image:url(/public/img/docTipo/archivoOn_wu_a142a87d06827527a20f722cf81defcb.gif)}
+
+a.mp3{background-image:url(/public/img/docTipo/audio_wu_3e9f1151a2dde2416749248800e11e25.gif)}
+a.mp3:hover{background-image:url(/public/img/docTipo/audioOn_wu_88b27eefcaada7d300a8a00914c716c0.gif)}
+a.txt{background-image:url(/public/img/do	cTipo/txt.gif)}
+a.txt:hover{background-image:url(/public/img/docTipo/txtOn_wu_ab09648236c0f5b0130e1f6c4e59c2af.gif)}
+a.pdf{background-image:url(/public/img/docTipo/pdf_wu_863f7cd7f2dc27eab286c8647dc58d29.gif)}
+a.pdf:hover{background-image:url(/public/img/docTipo/pdfOn_wu_9bcd88872cb72ab1271058bda06b248f.gif)}
+a.doc{background-image:url(/public/img/docTipo/doc_wu_3d296d54f99d7e9dcd595611a5723450.gif)}
+a.doc:hover{background-image:url(/public/img/docTipo/docOn_wu_ae681c7dce5903904d3b422f54c2487a.gif)}
+a.docx{background-image:url(/public/img/docTipo/doc_wu_3d296d54f99d7e9dcd595611a5723450.gif)}
+a.docx:hover{background-image:url(/public/img/docTipo/docOn_wu_ae681c7dce5903904d3b422f54c2487a.gif)}
+a.dot{background-image:url(/public/img/docTipo/doc_wu_3d296d54f99d7e9dcd595611a5723450.gif)}
+a.dot:hover{background-image:url(/public/img/docTipo/docOn_wu_ae681c7dce5903904d3b422f54c2487a.gif)}
+a.dotx{background-image:url(/public/img/docTipo/doc_wu_3d296d54f99d7e9dcd595611a5723450.gif)}
+a.dotx:hover{background-image:url(/public/img/docTipo/docOn_wu_ae681c7dce5903904d3b422f54c2487a.gif)}
+a.xls{background-image:url(/public/img/docTipo/xls_wu_863f7cd7f2dc27eab286c8647dc58d29.gif)}
+a.xls:hover{background-image:url(/public/img/docTipo/xlsOn_wu_b257611536489438ab87b516473fba79.gif)}
+a.xlsx{background-image:url(/public/img/docTipo/xls_wu_863f7cd7f2dc27eab286c8647dc58d29.gif)}
+a.xlsx:hover{background-image:url(/public/img/docTipo/xlsOn_wu_b257611536489438ab87b516473fba79.gif)}
+a.ppt{background-image:url(/public/img/docTipo/ppt_wu_ac2659254d4800b8f574c524b6acba8b.gif)}
+a.ppt:hover{background-image:url(/public/img/docTipo/pptOn_wu_b0491d4649b9869c063c75c592a122e0.gif)}
+a.pptx{background-image:url(/public/img/docTipo/ppt_wu_ac2659254d4800b8f574c524b6acba8b.gif)}
+a.pptx:hover{background-image:url(/public/img/docTipo/pptOn_wu_b0491d4649b9869c063c75c592a122e0.gif)}
+a.pps{background-image:url(/public/img/docTipo/ppt_wu_ac2659254d4800b8f574c524b6acba8b.gif)}
+a.pps:hover{background-image:url(/public/img/docTipo/pptOn_wu_b0491d4649b9869c063c75c592a122e0.gif)}
+a.ppsx{background-image:url(/public/img/docTipo/ppt_wu_ac2659254d4800b8f574c524b6acba8b.gif)}
+a.ppsx:hover{background-image:url(/public/img/docTipo/pptOn_wu_b0491d4649b9869c063c75c592a122e0.gif)}
+
+a.externo{padding:0 20px 0 0;background-image:url(/public/img/css/icono/icoVentanaNueva_wu_f69515f902f29f734542c395ff4e13af.gif);background-position:100% 4px}
+a.externo:hover{background-image:url(/public/img/css/icono/icoVentanaNuevaOn_wu_182a2cd6ce175277ab348dd8825dd65f.gif)}
+a.docimg, a.externoimg{margin:0 !important;padding:0 !important;background:transparent !important}
+
+a[href^="callto:"]{text-decoration:none;color:#35261a;cursor:auto}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:#35261a}
+h2, h3, h4, h5, h6{margin:0 0 7px;font-weight:normal;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif;color:#35261a}
+h2{font-size:2.9em}
+h3{font-size:2.3em}
+h4{font-size:2em}
+h5{font-size:1.7em;color:#000}
+h6{font-size:1.5em;color:#000}
+
+ol{margin:15px 0 15px 25px}
+ol li{list-style-type:decimal;margin-bottom:6px;padding:0 0 6px;border-bottom:1px dashed #d4cbaa}
+
+dl{width:98%;float:left;min-height:10px !important;height:auto !important;height:10px;clear:both;margin-bottom:10px;padding:5px 1% 3px;border:1px solid #edecdb}
+dt{width:97%;float:left;margin-bottom:2px;padding:10px 1.5% 7px;background:#edecdb;font-size:1.4em}
+dd{width:95%;float:left;margin-top:-1px;padding:15px 2.5%;background:#fff url(/public/img/css/aplicacion/fondo2_wu_5dfd979b4e7520f579a70946d8f0cc91.gif) repeat-x 0 0;line-height:1.7em}
+
+table{margin-bottom:15px;border-spacing:4px;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif}
+caption{margin:0 15px;text-align:left;font-size:2.3em;color:#35261a}
+th, td{padding:10px;font-size:1.2em;vertical-align:top}
+th{background:#645a4f;color:#fff;font-weight:normal}
+td{background:#ecebda;color:#645a4f}
+
+hr{width:100%;clear:both;height:1px;border:0;background:#000;color:#000}
+
+acronym, abbr{cursor:help;border:0}
+blockquote, cite{cursor:auto}
+code{}
+address{display:inline;font-style:normal}
+kbd{line-height:2em;font:normal .8em "Lucida console", Courier, monospace;border-top:.15em solid #ccc;border-right:.25em solid #aaa;border-bottom:.3em solid #888;border-left:.2em solid #bbb;padding:.05em .2em;margin:0 1.5px;color:#000;background:#eee;vertical-align: text-bottom;cursor:help}
+em, strong{}
+dfn{}
+p{margin:0 0 15px;line-height:1.5em}
+
+.cursorAdjunto{cursor:pointer}
+.teclaacceso{border-bottom: 1px solid #000}
+.hidden, .mensaje{position:absolute;top:0;left:-4000px;z-index:-100}
+
+/* comunes en aplis. (se repiten mucho) */
+/* no se han encontrado resultados de las busquedas
+p.inforesultados{clear:both !important;padding:20px 20px 15px 60px;background:#fff url(/public/img/css/aplicacion/alerta_wu_3b2c98c19f75f4ff665e56dd4c34e42e.gif) no-repeat 15px 15px;border:5px solid #e1e1e1;border-top-color:#f7c105;font-size:1.1em;font-weight:bold;color:#000}*/
+/* ver todos los resultados */
+.vertodos{width:100%;float:left;margin:0;padding-top:5px;border-top:1px solid #a59e96;text-align:right}
+.vertodos a, .vertodos a:hover{display:block;padding:0 20px 0 0;background:transparent url(/public/img/css/icono/verMas_wu_795037376a597dff915f9a903aa26916.gif) no-repeat 100% 2px !important;font-size:.9em}
+
+/* +++++++ LA ESTRUCTURA ++++++++ */
+#cab, #header, #section, #footer{min-width:730px;width:100%;border:0;margin:0 auto;text-align:center}
+#contenedorcuerpo{background:#fff url(/public/img/css/portal/fondo_wu_735dd0bab0addead708c1078ca1ade25.gif) repeat-y 0 0}
+.dimensioncuerpo{max-width:60em;min-width: 47.5em;margin:0 auto;padding:0 10px;border:0;text-align:left}
+.cuerpo{font-size:75%}
+
+#cab{padding:5px 0 7px;background:#4b3d33}
+#cab .dimensioncuerpo{text-align:right;color:#fff}
+#cab .cuerpo *{display:inline-block;margin:0;vertical-align:middle}
+.redes-sociales p{color:#cec9a1}
+#cab ul{margin-left:5px}
+#cab li{padding-left:2px}
+
+.tlfinfo{float:left;margin:5px 0 0 20px !important;padding-left:25px;background:transparent url(/public/img/css/icono/tlfInfo_wu_3ffa712b6ff6efb6af27d3814bbafca9.gif) no-repeat 0 0;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif;font-size:1.3em;line-height:normal;color:#fff}
+#cab #ticker-cab{margin-right:10px;}
+#cab #ticker-cab strong{margin:1px 10px 0 0;padding-right:13px;background:transparent url(/public/img/css/icono/icono_wu_e371711a5417cc57a09db499b8e7567d.png) no-repeat 100% 2px;font:normal 1.25em bankia_medium;color:#cec9a1}
+#cab #ticker-cab li{padding:0 7px;border-left:1px solid #e7e5e4;line-height:1em;color:#b9d12e}
+#cab #ticker-cab li.dato1{margin-right:7px;padding-right:13px;background:transparent no-repeat 100% 50%;border:0;font-weight:bold}
+
+#cab #ticker-cab li.suben{color:#b9d12e}
+#cab #ticker-cab li.dato1.suben{background-image:url(/public/img/css/icono/icoSubeTickerCab_wu_57c0d571a2ae1a4471e34f1090d8bcce.png)}
+#cab #ticker-cab li.bajan{color:#f00}
+#cab #ticker-cab li.dato1.bajan{background-image:url(/public/img/css/icono/icoBajaTickerCab_wu_b7c067282d9503475b7a1d6066c92f8b.png)}
+#cab #ticker-cab li.mant{color:#fff}
+#cab #ticker-cab li.dato1.mant{background-image:url(/public/img/css/icono/icoMantieneTickerCab_wu_6cebfca654392af64240893fe9290fd3.png)}
+#cab #ticker-cab li.dato3{color:#fff}
+
+#header, #section{float:left}
+#header{padding:13px 0;background:#fff}
+#header .cuerpo{width:100%;float:left;position:relative;z-index:100}
+#section{background:transparent url(/public/img/css/portal/adjuntaMenu_wu_d45531a91ebef7cac93ff2f018592844.jpg) no-repeat 50% 0}
+
+.gruponav{z-index:10;position:relative;width:100%;float:left;background:#35261a}
+#nav{width:100%;float:left;min-height:72px !important;height:auto !important;height:72px}
+#nav2{width:99%;float:left;min-height:52px !important;height:auto !important;height:52px;padding:13px 0 0 1%;border-top:1px solid #b9d12e}
+#nav3{width:22.9%;float:left;margin-top:-4.6em;padding:16px 1% 20px 0;background:#fff url(/public/img/css/portal/sombraNav3_wu_6809bf0ea2dbb2372f336a44c7d45a5d.gif) no-repeat 100% 50px}
+#content{width:100%;float:left;background:#fff}
+#situacion, #atajo, #navinf{width:100%;float:left}
+#recurso{width:72.1%;float:right;min-height:300px !important;height:auto !important;height:300px;padding:25px 2%;background:#fff}
+#atajo{width:73.1%;float:right;padding:13px 1% 8px 24.9%;background:#f2f1e6}
+
+#navinf{z-index:1;position:relative;width:99%;padding:40px .5%;background:#fff}
+#footer{margin-top:-1.8em;position:relative;float:left;min-height:79px !important;height:auto !important;height:79px;padding-top:49px;background:#35261a url(/public/img/css/portal/fondoPie_wu_8659f78b8f48974567e44913bd9935fa.gif) repeat-x 0 100%}
+
+/* +++++++++++++++ */
+/* encabezado */
+#header .logo{z-index:100;position:absolute;top:52px;left:22px;margin:0}
+#header .logo img{display:block}
+#buscadorGeneralForm, #idioma, #utilidades{float:right;margin:3px 20px 0 0}
+#header *{color:#35261a}
+
+#utilidades{background:transparent url(/public/img/css/portal/separador_wu_d19c33bce8d416b5d21dabe542d30438.gif) no-repeat 0 50%}
+#utilidades li{display:inline;padding:0 7px;background:transparent url(/public/img/css/portal/separador_wu_d19c33bce8d416b5d21dabe542d30438.gif) no-repeat 100% 50%;font-size:.9em}
+#utilidades li.rss a{padding-left:20px;background:transparent url(/public/img/css/icono/icoRss_wu_0a15a304a07453437f0128ea8c100930.gif) no-repeat 0 0}
+
+#idioma{position:relative}
+#idioma span{display:block;padding:1px 26px 2px 0;background:transparent url(/public/img/css/icono/verIdiomas_wu_d27dc241b8767df1cfabb9abd3f3ef0f.gif) no-repeat 100% 0;font-size:.9em}
+#idioma span:hover{text-decoration:underline;color:#8f8171}
+#idioma.idiomaon{width:5.35em}
+#idioma.idiomaon div{z-index:100;position:absolute;top:-5px;left:-1em;width:6em;padding:7px;background:#fff;border:1px solid #d3d3d3}
+#idioma.idiomaon span{padding:0 15px 3px 0;background-image:url(/public/img/css/icono/idiomaOn_wu_6a15e3c6972def017c8465c3ccbfda9f.gif);background-position:100% 3px;border-bottom:1px solid #cdc8c4;color:#b9d12e}
+#idioma li{padding:5px 0 0;font-size:.9em}
+#idioma li a{text-decoration:underline}
+#idioma .activo{display:none}
+
+#buscadorGeneralForm{margin:0 10px 0 0;background:#fefefe;border:1px solid #c1b6ad;font-size:.9em}
+#buscadorGeneralForm input{float:left;padding:2px 5px;background:transparent;border:0}
+#buscadorGeneralForm input.buscar{padding:0}
+
+/* navegacion */
+#n1 a, #n1 a:hover{text-decoration:none!important}
+#n1{float:right}
+#n1 li{float:left;padding:0 0 0 10px;font-size:1.45em;font-family:bankia,'Trebuchet MS', Helvetica, sans-serif}
+#n1 li a{display:block;padding:3px 7px 0 7px;border-top:7px solid #35261A;color:#fff}
+#n1 li a span{display:block;padding-top:10px;border-top:7px solid #35261A}
+
+#n1 li.menu-on a, #n1 li a:hover{padding-bottom:26px;background:transparent url(/public/img/css/portal/flechaMegamenu_wu_749747cda910085f8c5409d033102b16.gif) no-repeat 50% 100%;color:#fff !important}
+#n1 li a:hover span, #n1 li.pmactivocon a:hover, #n1 li.pmactivosin a:hover{color:#b9d12e!important}
+#n1 li.pmactivocon.primero a, #n1 li.primero.menu-on a, #n1 li.primero a:hover{padding-left:50px;background-position:60% 100%}
+#n1 li.pmactivocon a, #n1 li.pmactivosin a{color:#b9d12e!important}
+#n1 li.pmactivocon a span, #n1 li.pmactivosin a span{border-top:7px solid #b9d12e}
+
+#n1 li.ultimo{margin-left:5px;padding-top:0;color:#35261a}
+#n1 li.ultimo a{padding:28px 5px 25px;background:#cecbb3;border:0;color:#35261a}
+#n1 li.ultimo a:hover{background:#8f8171;border:0;color:#fff!important}
+#n1 li.ultimo a span{padding:0;border:0}
+#n1 li.ultimo.pmactivocon a, #n1 li.ultimo.pmactivosin a{background:#b9d12e;color:#2d1e12!important}
+#n1 li.ultimo a:hover, #n1 li.ultimo.pmactivocon a:hover, #n1 li.ultimo.pmactivosin a:hover{background:#645A4F;border:0;color:#fff!important}
+
+	/* ------------------- megamenu desplegable ------------------- */
+	#n1 li ul{display:none}
+	#n1 li.menu-on ul{display:block;width:100%;float:left;z-index:1000;position:absolute;top:72px;left:0;width:100%;height:67px;background:#5d4d41;border-top:7px solid #b6ce2d}
+
+	/*#n1 .megamenu .cajamegamenu{width:100%;float:left;background:#c6c29c url(/public/img/css/portal/megaMenu_wu_cbf8b75f0c956ca7f948dfedf72491dd.jpg) no-repeat 100% 100%}*/
+	#n1 li.menu-on li{max-width:13em;display:inline-block;padding:15px 0 0 !important;font:normal .85em Arial !important}
+	#n1 li.menu-on li:first-child{max-width:16em}
+	#n1 li.pmactivosin.menu-on li a, #n1 li.pmactivocon.menu-on li a, #n1 li.menu-on li a{display:inline-block;min-height:35px;padding:3px 10px 0 8px !important;background:transparent;border:0 !important;border-bottom:4px solid transparent !important;color:#cecbb3 !important}
+	#n1 li.menu-on li.submenu-on a{padding-bottom:10px !important}
+	#n1 li.menu-on li.pmcon a{background:transparent url(/public/img/css/icono/icono5_wu_8974dcaf6246ce6b07c12a56cf1e0127.png) no-repeat 100% 7px !important}
+	#n1 li.menu-on li.pmcon a:hover{background-image:url(/public/img/css/icono/icono6_wu_ff7b25c57d16eab0391defa3ffdadef2.png) !important}
+	#n1 li.pmactivosin.menu-on li.pmactivocon a, #n1 li.pmactivocon.menu-on li.pmactivosin a, #n1 li.menu-on li a:hover{border-bottom:4px solid #b9d12e !important}
+
+	#n1 li.menu-on ul li ul{display:none;top:67px;width:65%;height:auto;z-index:-1;padding:20px 33% 30px 2%;background:#c6c29c;border-top:4px solid #c6c29c}
+	#n1 li.menu-on ul li.submenu-on ul{display:block}
+	#n1 li.menu-on ul li ul li{width:48%;max-width:48% !important;margin-right:2%;padding:10px 0 !important;background:transparent !important;border-bottom:1px solid #b2ae89}
+
+	#n1 li.menu-on ul li.submenu-on ul li a{min-height:0;padding:0 !important;background:transparent !important;border:0 !important;color:#35261a !important}
+
+	#n1 li.menu-on ul li.pmcon ul li a:hover{background:transparent !important}
+	#n1 li.menu-on ul li.submenu-on ul li a:hover{border:0 !important;color:#fff !important}
+
+#n2 li{max-width:10.5em;display:inline-block;vertical-align:middle;padding:0 7px 10px;font-size:1.3em;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif}
+#n2 li.primero{max-width:13em}
+#n2 li.ultimo{background:transparent}
+#n2 li a{display:block;padding:3px 3px 3px 2px;text-decoration:none !important;color:#cec9a1 !important}
+#n2 li.pmactivocon a, #n2 li.pmactivosin a{color:#b9d12e !important}
+#n2 li a:hover{background:#cecbb3;color:#35261a !important}
+
+#n3{width:100%;float:left}
+#n3 li{padding:3px 0;border-bottom:1px solid #eaeaec;font-size:1.3em;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif}
+#n3 a{display:block;padding:7px 10px 7px 20px;text-decoration:none;color:#645a4f}
+#n3 a span{display:block;padding-left:10px;background:transparent url(/public/img/css/icono/vineta6_wu_29bd922af7d180cbc3268e402511fdf5.gif) no-repeat 0 8px}
+#n3 li.pmactivocon a, #n3 li.pmactivosin a{background:#b9d12e;color:#35261A !important}
+#n3 li.pmactivocon a span, #n3 li.pmactivosin a span{background-image:url(/public/img/css/icono/vineta6_wu_29bd922af7d180cbc3268e402511fdf5.gif);color:#35261A !important}
+#n3 li a:hover, #n3 li a:hover span{background:#645A4F !important;color:#fff!important}
+
+
+#n4{background:#f6f6f6}
+#n4 li{padding:1px 0 0;border:0;border-top:1px solid #fff;font-size:.9em}
+#n3 li.pmactivocon #n4 li a{padding:5px 8px 4px 30px;background:transparent!important;color:#645a4f!important}
+#n3 li.pmactivocon #n4 li.pmactivocon a, #n3 li.pmactivocon #n4 li.pmactivosin a{background-color:#E1E1E1!important}
+#n3 li.pmactivocon #n4 li.pmactivocon a:hover, #n3 li.pmactivocon #n4 li.pmactivosin a:hover,
+#n3 li.pmactivocon #n4 li a:hover{background-color:#807365!important;color:#fff!important}
+
+/* compas */
+#compas{width:95.2%;float:left;padding:4px 2.4%;background:transparent url(/public/img/css/portal/transparencia6_wu_1b6bd5975d350ea2fa85176176093f57.png) repeat 0 0;font-size:.9em}
+/*.mozilla  #compas{margin-bottom: 75px}
+.ie9 #compas{margin-bottom: 79px}*/
+#compas *{display:inline;margin:0;color:#35261a !important}
+#compas ol{margin-left:5px}
+#compas li{padding:0 7px 0 8px;background:transparent url(/public/img/css/icono/vineta2_wu_a252f489ec7e88902b7e4c259485b6b6.gif) no-repeat 0 5px;border:0}
+
+/* punto activo */
+#pactivo{width:72.5%;float:right;margin-top:64px;padding:18px 2% 18px 25.5%;background:transparent url(/public/img/css/portal/transparencia_wu_57cf453860420dec3d06fe9ac72eb41a.png) repeat 0 0}
+.mozilla #pactivo{margin-top:50px}
+.moz11 #pactivo, .ie #pactivo{margin-top:63px}
+#pactivo h1{margin:0;font:normal 2.8em Bankia,'Trebuchet MS', Helvetica, sans-serif;color:#fff}
+
+/* atajo */
+#atajo{position:relative;z-index:1}
+#atajo .compartir{min-height:20px!important;height:auto!important;height:20px;float:left;margin:0}
+#atajo .compartir img{margin-left:5px;vertical-align:middle}
+#atajo .compartir p{float:left;margin:0 5px 0 0;font-weight:bold}
+
+#atajo ul{float: right;margin: 0;}
+#atajo li{float: left;}
+#atajo li a{min-height:19px;display: block;padding:2px 28px 2px 15px;background:transparent url(/public/img/css/portal/atajoSubir_wu_135ac95ad2640e0839122a27761b0c58.gif) no-repeat 100% 0;color:#6e655b}
+#atajo #atajoVolver a{background-image:url(/public/img/css/portal/atajoVolver_wu_1fb2196a031dfd7ba8171de1fc8e8447.gif)}
+	#atajo li a:hover{background-image:url(/public/img/css/portal/atajoSubirHover_wu_37ffd0d8b4de603e0bbd17fbe3fa0cff.gif)}
+	#atajo #atajoVolver a:hover{background-image:url(/public/img/css/portal/atajoVolverHover_wu_736cea3b24b2256fa2b016d20bc883c2.gif)}
+
+#atajo #bookmark{float:left}
+#atajo #bookmark ul{width:auto;float:left;margin:1px 0 0 5px}
+#atajo #bookmark li a{padding:0 2px;background:transparent}
+
+/* menu inferior */
+#navinf li{width:15%;float:left;margin:0 .7%;font-family:bankia_medium,'Trebuchet MS', Helvetica, sans-serif}
+#navinf li a{display:block;min-height:40px;padding:0 0 10px;border-bottom:1px solid #a49e97;font-size:1.45em}
+#navinf li ul{width:100%;float:left;margin-top:25px}
+#navinf li li{width:100%;padding:0 0 7px;font-size:.7em;font-family:Arial}
+#navinf li li a{min-height:0;padding:0;border:0;color:#35261a}
+	span.nota,
+	#navinf li li span, #navinf li li ul{display:none}
+
+/* pie */
+#footer div *{color:#c3bebb !important}
+#footer .seccion1{padding:3px 0 0 10px;text-align:center}
+#footer .seccion1 ul{display:inline-block;margin:0 auto;background:transparent url(/public/img/css/portal/separador2_wu_29bd922af7d180cbc3268e402511fdf5.gif) no-repeat 0 3px}
+#footer .seccion1 li{display:inline-block;padding:0 11px 0 6px;background:transparent url(/public/img/css/portal/separador2_wu_29bd922af7d180cbc3268e402511fdf5.gif) no-repeat 100% 3px}
+#footer .seccion1 li a{display:block;padding-bottom:2px}
+
+#footer .seccion2{width:16.5em;float:right}
+#footer .seccion2 *{padding-left:0;font-weight:normal}
+#footer .seccion2 img{position:relative;vertical-align:middle}
+
+#footer .seccion3{margin-top:30px;text-align:center}
+#footer .seccion3 p{font-size:.9em;color:#35261a !important}
+
+/* popup imagen */
+#a_popupimagen #adjunto{z-index:1000}
+#a_popupimagen{border:16px solid #35261a;background:#35261a;text-align:center;font-size:70%;color:#fff}
+#a_popupimagen img{display:block;border:2px solid #b9d12e}
+#a_popupimagen .cerrar{height:1px;padding:0;position:relative}
+#a_popupimagen .cerrar a{display:block;position:absolute;top:-22px;right:-22px;width:22px;height:22px;text-indent:-90000px;background: transparent url(/public/img/css/icono/cerrar_wu_15ed4f0ebe0c4d064f151e253c488342.png) no-repeat 0 0}
+#a_popupimagen .piefoto{padding:5px 0 0;text-align:left}
+#a_popupimagen #precarga{position:absolute;top:0;left:0;width:32px;height:32px;background: transparent url(/public/img/css/portal/cargando_wu_674585ae31c700d4a0fb2f4c20f03cf1.gif) no-repeat}

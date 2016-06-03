@@ -1,0 +1,31 @@
+@import "plantillasPerso.css";
+.modulo100{width:100%;float:left;}
+
+.img_Sin, .img_Con{float:none;margin:0;vertical-align:middle}
+.img_Sin_L, .img_Con_L{float:left;margin:0 10px 10px 0}
+.img_Sin_R, .img_Con_R{float:right;margin:0 0 10px 10px}
+.img_Con, .img_Con_L, .img_Con_R{padding:0;border:1px solid #000}
+
+div.hrtipo1{width:100%;float:left;margin:15px 0}
+div.hrtipo1 hr.tipo1{height:1px;background:#a29c95;border:0;color:#a29c95}
+hr.tipo2{width:100%;float:left;height:1px;margin:15px 0;background:#b9d12e;border:0;color:#b9d12e}
+
+ul.tipo1, ul.tipo2{margin:15px 0;line-height:1.5em}
+ul.tipo1 li, ul.tipo2 li, ul.tipo2 li li{margin-bottom:6px;padding:0 0 6px 15px;background:transparent url(/public/img/css/icono/vineta6_wu_29bd922af7d180cbc3268e402511fdf5.gif) no-repeat 2px 7px;border-bottom:1px dashed #d4cbaa}
+ul.tipo2 li, ul.tipo1 li li{background-image:url(/public/img/css/icono/vineta7_wu_e6e1f4a50b2f9649eece61f56494915c.gif);background-position:2px 8px;border-color:#dbdbdb}
+
+th.tipo1, th.tipo2{background:#645a4f url(/public/img/css/portal/esThIzda_wu_f11a55570977d729888fe7a02f54fc54.gif) no-repeat 0 0}
+th.tipo2{background-image:url(/public/img/css/portal/esThDcha_wu_301960e9f90b6af03d6122700bb8d4a9.gif);background-position:100% 0}
+td.tipo1{background:#fff}
+td.tipo2{background:#f2f1e6}
+
+/* anclas */
+a.ancla_destino{position:absolute;visibility:hidden}
+a.ancla_origen{text-decoration:underline;}
+/* enlaces */
+/* cuando enlazo un contenido sin seleccionar ningun texto */ a.enlace_interno{}
+/* enlace de tipo correo */ a.enlace_email{}
+
+h2.tipo2, h3.tipo2, h4.tipo2, h5.tipo2, h6.tipo2{color:#645a4f}
+h2.tipo2{font-size:2.6em}
+h3.tipo2{font-size:2.2em}

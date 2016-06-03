@@ -1,0 +1,5 @@
+bankia-website:
+  image: jantoniucci/bankia-website
+  labels:
+    io.rancher.container.hostname_override: container_name
+    io.rancher.sidekicks: bankia_website_name

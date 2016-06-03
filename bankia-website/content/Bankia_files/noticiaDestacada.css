@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#a_noticiadest{width:98%;float:left;position:relative;padding:0 1%;background:#fff}
+#a_noticiadest h2{text-transform:uppercase;font-size:2.3em;font-weight:normal;color:#94A103}
+#a_noticiadest ul{margin-bottom:10px}
+#a_noticiadest li{padding:0 0 5px 0;line-height:1.5em}
+#a_noticiadest span{display:block;padding-bottom:5px}
+#a_noticiadest .fecha{font-size:1.1em;font-family:Bankia,'Trebuchet MS', Helvetica, sans-serif;color:#645a4f}
+#a_noticiadest a{color:#35261a}
+
+/* -------------------------------------------------- */
+
+	#portal-responsive #a_noticiadest{
+		width: auto;
+		float: none;
+		margin-left: 3px;
+		padding: 10px 10px 0;
+		background: #fff
+	}
+	
+	
+@media only screen and (max-device-width: 550px) {	
+	
+	#portal-responsive #a_noticiadest h2 {
+		font-size: 24px;
+	}
+	
+}

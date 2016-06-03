@@ -1,0 +1,11 @@
+.catalog:
+  name: "bk-bankia-website"
+  version: "1.0"
+  description: "bankia official website"
+  questions:
+    - variable: bankia_website_name
+      description: "Unique name to assign to your website."
+      label: "Website Name"
+      type: "string"
+      required: true
+      default: "bankia-website"

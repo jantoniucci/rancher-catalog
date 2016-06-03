@@ -1,0 +1,5 @@
+@charset "UTF-8";
+#a_error{border:5px solid #e1e1e1;border-top-color:#bc3f40;background:#fff}
+#errorejecucion{padding:20px 20px 20px 80px;background:transparent url(/public/img/css/aplicacion/error_wu_3756081c868b7ba502414afa9a4b4635.gif) no-repeat 20px 18px}
+#errorejecucion ul{width:70%}
+#errorejecucion ul li{margin-bottom:6px;padding:0 0 6px 15px;background:transparent url(/public/img/css/icono/vineta6_wu_29bd922af7d180cbc3268e402511fdf5.gif) no-repeat 2px 7px;border-bottom:1px dashed #d4cbaa}

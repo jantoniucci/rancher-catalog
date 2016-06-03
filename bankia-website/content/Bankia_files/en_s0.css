@@ -1,0 +1,11 @@
+/* en caso de haber cambios de por idioma */
+#n1 li{padding:0}
+#atajo ul{width:16.7em}
+
+.modulohome .caja-cliente .boton a{font-size:1.2em}
+
+@media screen and (max-width: 960px) {
+	#n1 li{padding:0 !important;font-size:1.25em}
+	#n2 li a{padding:3px 2px 3px 1px}
+	#n1 li.ultimo a{padding:28px 5px 25px !important}
+}

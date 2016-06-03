@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*cambia la estructura de la home*/
+
+.gruponav{border-bottom:24px solid #b9d12e}
+#contenedorcuerpo, #section, #recurso{background:transparent}
+#content{padding:35px 0 0;background:transparent}
+#recurso{width:100%;padding:0}
+
+#atajo{width:98%;padding-left:2%;padding-right:0}
+#atajo ul.atajo{display:none}
+
+.modulohome .flexslider li .texto{-webkit-text-shadow:0 0 3px #adaca3;-moz-text-shadow:0 0 3px #adaca3;text-shadow:0 0 3px #adaca3}

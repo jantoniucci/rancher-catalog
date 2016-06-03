@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* el carrusel de la home se monta en la css del plugin
+mientras que el de la subhome se redefine en la css subhome.css */
+
+#a_destacados{width:100%;}
+
+#portal-classic #a_destacados{z-index:0;position:absolute;top:120px;left:0;}
+
+#portal-responsive #a_destacados{position:relative}
+
+#a_destacados .rollover, #a_destacados .rollover a{z-index:10;position:absolute;top:0;left:0;width:100%;height:100%;display:block;background:transparent url(/public/img/css/aplicacion/transparencia_wu_7c65278ed51f0902b212ab2b372f6986.png) repeat 0 0}
+#a_destacados .rollover a{background:transparent url(/public/img/css/aplicacion/play_wu_f447298e5b65de7ba29dd697113dc642.png) no-repeat 50% 35%;cursor:pointer}
+
+#section{background:transparent!important}

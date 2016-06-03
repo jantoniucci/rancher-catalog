@@ -1,0 +1,32 @@
+/* esta css se importa desde script-style.css para incluirla por javascript */
+@font-face {
+    font-family: 'bankia';
+    src: url('/public/css/fuente/bankia-regular-webfont_wu_a545bdcd8626fbfc72f2ca3899fd2a6c.eot');
+    src: url('/public/css/fuente/bankia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/public/css/fuente/bankia-regular-webfont_wu_93b2ec674d04ab395ad49dd675d04b81.woff') format('woff'),
+         url('/public/css/fuente/bankia-regular-webfont_wu_d913c1d6c774c1474a1fa775e587b7a4.ttf') format('truetype'),
+         url('/public/css/fuente/bankia-regular-webfont.svg#bankiaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bankia_medium';
+    src: url('/public/css/fuente/bankia-medium-webfont_wu_f36034567cbda3ac38afcdcb07fd128b.eot');
+    src: url('/public/css/fuente/bankia-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/public/css/fuente/bankia-medium-webfont_wu_3f57e8a6252814ea44da2e8f6638f4ec.woff') format('woff'),
+         url('/public/css/fuente/bankia-medium-webfont_wu_7ca152a124831bc511fc9e3a13c32b92.ttf') format('truetype'),
+         url('/public/css/fuente/bankia-medium-webfont.svg#bankia_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bankia-bold';
+    src: url('/public/css/fuente/bankia-bold-webfont_wu_c3c402ca6328e364c47039080378d7c9.eot');
+    src: url('/public/css/fuente/bankia-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/public/css/fuente/bankia-bold-webfont_wu_8e30879110797bc0162df6bfa2d5d4c1.woff') format('woff'),
+         url('/public/css/fuente/bankia-bold-webfont_wu_cccc52670571ca9c80bff63aa508b3b0.ttf') format('truetype'),
+         url('/public/css/fuente/bankia-bold-webfont.svg#bankiabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

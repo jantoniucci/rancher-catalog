@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'bankia';
+    src: url('/public/plugin/cookies/bankia-regular-webfont-eot_wu_a5f39ed6676683b3d1d365752b25e43a.eot');
+    src: url('/public/plugin/cookies/bankia-regular-webfont-eot.eot?#iefix') format('embedded-opentype'),
+         url('/public/plugin/cookies/bankia-regular-webfont-woff_wu_85308c8e224433653dd50239db002d21.woff') format('woff'),
+         url('/public/plugin/cookies/bankia-regular-webfont-ttf_wu_3f291a4db87a648cf88850abdf830ec3.ttf') format('truetype'),
+         url('/public/plugin/cookies/bankia-regular-webfont-svg_wu_a13437bd828844f815b580ec0ad5bfb6.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	margin: 0;
+}
+
+
+/* Estilos basicos enlace Aceptar Solucion Blackberry */
+
+#cc-notification ul.cc-notification-buttons li a {
+	text-decoration: underline;
+	color: #017A99;
+	font-size: 12px;
+	float: none;
+}
+
+#cc-notification {
+	background-color: #dfdbc1 !important;
+	font-family: Verdana;
+}
+
+#cc-notification {
+	position: fixed !important;
+	z-index: 99999998 !important;
+	left: 0 !important;
+	width: 100% !important;
+	font-size: 11px !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=97)";
+	filter: alpha(opacity=97);
+	background: rgb(223, 219, 193) !important;
+	background-color: rgba(223, 219, 193, 0.95) !important;
+	color: #35261a !important;
+	top: 0;
+
+}
+
+#cc-notification #cc-notification-wrapper {
+	padding: 11px 20px 0 !important;
+}
+#cc-notification h2 {
+	color: #35261a !important;
+	margin: 0 72px 0 0 !important;
+	text-align: left !important;
+	font-size: 12px;
+	width: auto !important;
+	margin-bottom: 14px !important;
+	font-weight: 400 !important;
+	font-family: Verdana;
+}
+
+#cc-notification h2 span {
+	font-size: 12px;
+	margin-bottom: 14px !important;
+	font-weight: 400 !important;
+	line-height: 18px;
+}
+#cc-notification a.new_window {
+	background: url('/public/plugin/cookies/new_window_wu_a94a42d9e15e478d1f30ba62da5b0e18.PNG') 100% 2px no-repeat;
+	padding-right: 20px;
+	color: #017a99;
+	text-decoration: underline;
+	font-size: 12px;
+	font-family: Verdana !important;
+}
+
+#cc-notification a.new_window:hover {
+	background-position: 100% -20px;
+	text-decoration: none !important;
+	color: #8f8171 !important;
+}
+
+#cc-notification p {
+	color: #35261a !important;
+	margin: 0 !important;
+	text-align: left !important;
+	font-size: 12px;
+	width: auto !important;
+}
+
+#cc-notification #cc-notification-permissions {
+	display: none;
+}
+
+.cc-clear {
+	clear: both !important;
+}
+#cc-notification p {
+	color: #35261a !important;
+	margin: 0 !important;
+	text-align: left !important;
+	font-size: 12px;
+	width: auto !important;
+}
+
+	#cc-notification .cc-link, #cc-notification .cc-link:visited {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		border-radius: 2px;
+		border: 1px solid;
+		background-image: none;
+		-webkit-box-shadow: #aaaaaa 0 1px 0 0, inset 1px 1px 0px 0 white;
+		-moz-box-shadow: #aaaaaa 0 1px 0 0, inset 1px 1px 0px 0 white;
+		box-shadow: #aaaaaa 0 1px 0 0, inset 1px 1px 0px 0 white;
+		background-color: #f9f9f9;
+		border-top-color: #e2e2e2;
+		border-left-color: #e2e2e2;
+		border-right-color: #e2e2e2;
+		color: #35261A;
+		font-family: Verdana;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: normal;
+		padding: 5px 11px 3px 11px;
+		position: relative;
+		text-decoration: none;
+		border-bottom: 2px solid #a7b22a;
+		float: right !important;
+		text-decoration: none;
+		display: inline-block;
+		top: -28px;
+		right: -72px;
+		text-decoration: none;
+
+		width: auto;
+		height: auto;
+		text-indent: 0;
+	}
+
+	#cc-notification .cc-link:before {
+		content: '';
+		bottom: -1px;
+		display: block;
+		left: 0;
+		padding-bottom: 1px;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		border-bottom: 1px solid #bdc92f;
+	}
+
+/* ----------------------------------- Tablet - Movil ----------------------------------- */
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px), (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-device-width : 1536px) and (max-device-width : 2048px) and (-webkit-min-device-pixel-ratio: 2)  {
+	#cc-notification {
+		line-height: 1 !important;
+		width: 100%;
+		font-size: 14px !important;
+	}
+	#cc-notification h2, #cc-notification span {
+		width: 100%;
+	}
+
+	#cc-notification h2 {
+		margin: 0 !important;
+		font-size: 14px !important;
+		line-height: 18px;
+		text-align: left !important;
+	}
+	#cc-notification h2 span {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	#cc-notification-wrapper h2 p {
+		text-align: center !important;
+		padding-bottom: 15px;
+		font-size: 14px !important;
+		width: auto !important;
+		margin: 14px 0 0 0 !important;
+		height: 36px;
+	}
+
+	#cc-notification a.new_window {
+		background: url('/public/plugin/cookies/new_window_touch_wu_ccbbd39d9acb934c9da38aba30ce34bd.PNG') 100% 2px no-repeat !important;
+		padding-right: 26px;
+		font-size: 14px !important;
+		height: 22px !important;
+		overflow: hidden;
+		vertical-align:  baseline;
+		font-family: Verdana !important;
+	}
+
+	#cc-notification a.new_window:hover {
+		background-position: 100% -28px;
+	}
+
+	#cc-notification .cc-link {
+		font-size: 22px;
+		padding: 5px 11px 3px 11px;
+		position: static;
+		font-family: bankia, Verdana, sans-serif;
+		margin: 0 auto;
+		display: inline-block;
+		bottom: 20px;
+		float: none !important;
+	}
+
+	#cc-notification .cc-link:before {
+		content: '';
+		bottom: -1px;
+		display: block;
+		left: 0;
+		padding-bottom: 1px;
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		border-bottom: none;
+	}
+}
+
+/* FIX BIG TEXT IN IPHONE 5 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	#cc-notification h2 span {
+		-webkit-text-size-adjust: 100%;
+	}
+}

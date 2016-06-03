@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* ajustes para iphone se pone un class por javascript para que solo afecte al iphone en android se ve bien
+	dentro de un media screen no funciona */
+	.iphone #header .logo{top:50px}
+	.iphone #buscadorGeneralForm, .iphone #idioma, .iphone #utilidades, .iphone .tlfinfo{margin-right:15px}
+	.iphone #buscadorGeneralForm input{width:70px}
+	.iphone #buscadorGeneralForm input.buscar{width:auto}
+	.iphone #utilidades li{padding:0 5px;font-size:.7em}
+
+.visible-phone{display:none !important}
+.hidden-phone{display:inherit !important}
+
+/* pantalla de 960 hacia abajo */
+@media screen and (max-width: 960px) {
+
+	/*estructura */
+	#header .logo{top:57px}
+	#header .logo img{width:75px}
+	#buscadorGeneralForm, #idioma, #utilidades, .tlfinfo{margin-right:5px}
+	.tlfinfo{background-position:0 0;font-size:1.1em}
+	#buscadorGeneralForm input{width:7em}
+	#buscadorGeneralForm input.buscar{width:auto}
+	#utilidades li{padding:0 3px}
+
+	/*#section{background-position:50% 20px}*/
+	#n1 li{padding-left:5px}
+	#n1 li a{padding:3px 10px 0}
+	#n1 .megamenu span.nota{width:230px}
+	#n1 .megamenu ul span.nota{left:510px}
+	#n1 .megamenu ul .pmsin span.nota{left:260px}
+
+	#nav2{width:99.5%;padding-left:.5%}
+	#n2 li{padding:0 2px 10px 2px;background-position:100% 3px;font-size:1.2em}
+
+	#pactivo h1 {font-size:3.4em}
+
+	#navinf li{width:19%;margin:0 .5%}
+	#navinf li a{font-size:1.2em}
+	#navinf li li a{font-size:1.3em}
+	#navinf li ul {margin-top:10px}
+
+	#footer .seccion1,
+	#footer .seccion2{font-size:.9em}
+	#footer .seccion3{margin-top:35px}
+	#footer .seccion3 strong{color:#35261A!important;font-size:.9em}
+
+	/*home*/
+	.modulohome{margin-top:215px}
+
+	.destacado{overflow:hidden}
+	/*.destacado img{width:auto !important;height:150px}*/
+	.destacado .infodestacado div{min-height:200px;height:auto;height:200px}
+	.caja4col .destacado .infodestacado div{min-height:130px !important;height:auto !important;height:130px}
+	.caja4col .destacado .infodestacado div p strong{font-size:1.5em}
+	.caja4col .destacado .infodestacado div{padding:15px 5%}
+	.modulohome .caja-cliente p strong{width:100px}
+
+	/* carrusel home y subhome */
+	.carrusel .flex-direction-nav{top:32%}
+	.carrusel .flex-direction-nav a{width:40px;height:40px;background-image:url(/public/plugin/flexSlider/img/bg_direction_nav_800_wu_08f3d9f6088188814f62112b65463c3a.png)}
+	.carrusel .flex-direction-nav .flex-disabled{background-image:url(/public/plugin/flexSlider/img/bg_direction_nav_disabled_800_wu_e9fc2bf1d351b29a4acf6581635a2c32.png)}
+	.carrusel .flex-control-nav{top:43.6%;right:4%}
+	.carrusel .flex-pauseplay{top:43.5%;right:.8%}
+
+	.modulohome .flexslider li p{font-size:1.5em}
+	.modulohome .flexslider li p .texto{width:430px;padding:20px 30% 0 0}
+	.modulohome .bullets{width:430px;padding-right:30%;top:280px}
+
+	.subhome{margin-top:91px}
+	.subhome .flexslider .slides > li{max-height:385px;height:385px}
+	.subhome .flexslider li .texto{height:85px;padding-bottom:10px}
+	.subhome .flexslider li p{font-size:1.5em}
+	.subhome .flexslider li .texto{width:710px}
+	.subhome .flexslider .bullets{width:760px}
+
+	#a_infobolsa .valor {font-size:1.4em !important}
+	#a_infobolsa .valor img{width:15px}
+
+	/*buscadores*/
+	.form_tipo2 .etiqueta, .form_tipo2 .etiquetarequerida, .form_tipo2 .fechas .titulofecha{font-size:.9em}
+	.form_tipo2 .fechas p{width:35%}
+	.form_tipo2 .fechas p span{margin-right:3px;font-size:.9em}
+	.form_tipo2 .fechas p input{font-size:1.5em}
+	.form_tipo2 .fechas img{margin-left:0}
+
+	/* listados // fichas */
+	.adjunta{width:100%}
+
+	/*paginacion*/
+	.paginacion form{width:25%}
+	.paginacion li.antpag{padding-right:0}
+ 	.paginacion li.sigpag{padding-left:0}
+
+}
+
+/* pantalla entra 960 y 1100 de resolucion */
+@media screen and (min-width: 960px) and (max-width: 1100px){
+
+	.modulohome .flexslider li p .texto{width:600px;padding:20px 20% 0 0}
+	.modulohome .bullets{width:600px;padding-right:20%}
+
+	.subhome .flexslider li p{font-size:1.5em}
+	.subhome .flex-direction-nav a{width:40px;height:40px;background-image:url(/public/plugin/flexSlider/img/bg_direction_nav_800_wu_08f3d9f6088188814f62112b65463c3a.png)}
+	.subhome .flex-direction-nav .flex-disabled{background-image:url(/public/plugin/flexSlider/img/bg_direction_nav_disabled_800_wu_e9fc2bf1d351b29a4acf6581635a2c32.png)}
+	.subhome .flexslider .flex-direction-nav{top:52.5%}
+
+}
+
+/* pantalla hasta 1600 de resolucion */
+@media screen and (min-width: 1600px){
+
+	#contenedorcuerpo{background:transparent url(/public/img/css/portal/fondoInterior_wu_373c1359e5a2ee4f001016d3c66fcb5d.gif) repeat-x 0 37px}
+	/*.dimensioncuerpo{max-width:70em}*/
+
+	.modulohome .flexslider li p .texto, .modulohome .bullets{width:705px;padding-right:10%}
+	/*.flex-direction-nav .flex-next{right:0}
+	.flex-direction-nav .flex-prev{left:0}*/
+
+	/*.caja4col .destacado .infodestacado div{padding:25px 5%}*/
+	#a_mediateca .album li{width:220px}
+
+}

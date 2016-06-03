@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#a_infobolsa{height:100%;padding:0 10px;position:relative;background:#35261a}
+#a_infobolsa h2{margin:0;padding:9px 5px;text-transform:uppercase;font-weight:normal;color:#cec9a1}
+#a_infobolsa h2 a{color:#cec9a1}
+
+#a_infobolsa th, #a_infobolsa td{padding:10px 10px 5px;background:#3a3939 url(/public/img/css/aplicacion/fondo4_wu_9588d956a96b0f7c18b1a94a5f80d462.gif) repeat-x 0 0;border:1px solid #161514}
+#a_infobolsa th{width: 50%;font:normal 1em Arial;color:#fff}
+#a_infobolsa th.fecha{text-align:center}
+#a_infobolsa th .hora{display:block}
+#a_infobolsa th a{color:#fff}
+#a_infobolsa td.valor{font-size:2em}
+#a_infobolsa td.valor span{float:left;}
+#a_infobolsa td.valor img{float:right;margin-top:7px}
+#a_infobolsa td.porcentaje{font-size:1.5em}
+	
+	#a_infobolsa tr.suben td.valor{color:#b9d12e}
+	#a_infobolsa tr.suben td.porcentaje{color:#94a103}
+	
+	#a_infobolsa tr.bajan td.valor{color:#f00}
+	#a_infobolsa tr.bajan td.porcentaje{color:#b22223}
+	
+	#a_infobolsa tr.mant td.valor, #a_infobolsa tr.mant2 td.valor{color:#fff}
+	#a_infobolsa tr.mant td.porcentaje, #a_infobolsa tr.mant2 td.porcentaje{color:#f6f6f6} 
+
+#a_infobolsa .vertodos{padding-top:0;border:0}
+#a_infobolsa .vertodos a{color:#cec9a1 !important}
+
+/* ----------------------------------------------------- */
+
+#portal-classic #a_infobolsa h2{font-size: 2.3em;}
+#portal-classic #a_infobolsa td.valor span {font-size: .9em}
+
+
+@media (max-width: 800px) {
+
+	#portal-responsive #a_infobolsa {margin: 0 10px;}
+
+}

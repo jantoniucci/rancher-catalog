@@ -1,0 +1,23 @@
+#a_timelinepressbankia iframe.twitter-timeline {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.twitter-timeline {display: inline-block}
+
+/* ----------------------------------------------------- */
+#portal-responsive #a_timelinepressbankia {
+	height: 100%;
+	background:#e5e6ea;
+}
+#portal-responsive #a_timelinepressbankia .content-iframe {
+	padding: 10px;
+}
+	
+@media (max-width: 800px) {
+
+	#portal-responsive #a_timelinepressbankia {
+		margin: 0 10px;
+	}
+	
+}
