@@ -5,14 +5,11 @@ bankia-website:
   labels:
     io.rancher.container.hostname_override: container_name
 
-kopf:
-  image: rancher/kopf:v0.4.0
+haproxy:
+  image: tutum/haproxy
   ports: 
     - "80:80"
-  environment:
-    KOPF_SERVER_NAME: 'website'
-    KOPF_ES_SERVERS: 'website:8080'
-  labels:
-    io.rancher.container.hostname_override: container_name
   links:
     - bankia-website:website
+  environment:
+    - BACKEND_PORT=8080
